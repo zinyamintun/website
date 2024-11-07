@@ -11577,8 +11577,42 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-
+/* Profile container */
 .profile {
+  position: relative;
+  width: 80vw; /* Match the width of the profile image container */
+  max-width: 45rem; /* Match the maximum width constraint */
+  height: 80vw; /* Same as the width to make it square */
+  max-height: 45rem; /* Maximum height */
+  background: linear-gradient(135deg, #2e003e 0%, #9b4d96 100%); /* Gradient background */
+  border-radius: 50%; /* Circular background */
+  overflow: hidden; /* Ensure the image fits within the circular container */
+  display: flex; /* Center the content inside */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile image */
+.profile .profile-img {
+  height: 80vw; /* Size the profile image based on viewport width */
+  max-height: 45rem; /* Maximum height for the image */
+  position: absolute; /* Position the image absolutely */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the image horizontally */
+  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+  border-radius: 50%; /* Ensure the image is circular */
+}
+
+/* Dots decoration (keeping original position) */
+.profile .dots-1 {
+  position: absolute;
+  width: 3vw; /* Width of the dots */
+  right: 1.5vw; /* Position from the right */
+  top: 4vw; /* Position from the top */
+}
+
+/* .profile {
   position: relative;
   height: 75vw;
   width: 75vw;
@@ -11600,7 +11634,7 @@ html {
   width: 3vw;
   right: 1.5vw;
   top: 4vw;
-}
+} */
 .profile .dots-1 svg {
   fill: #fff;
 }
