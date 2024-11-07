@@ -11604,6 +11604,7 @@ html {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .profile .dots-1 {
