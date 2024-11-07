@@ -11588,29 +11588,41 @@ html {
   font-size: 1.5rem;
 }
 
-/* Profile container without the purple background */
+/* Profile container */
 .profile {
   position: relative;
-  width: 80vw; /* Adjust width of the profile container */
-  max-width: 45rem; /* Maximum width */
-  height: 50vw; /* Adjust height to keep it rectangular */
-  max-height: 30rem; /* Maximum height */
-  display: flex;
+  width: 80vw; /* Adjust the width to your preference */
+  max-width: 45rem; /* Maximum width constraint */
+  height: 50vw; /* Adjust the height to make it rectangular */
+  max-height: 30rem; /* Maximum height constraint */
+  background: linear-gradient(135deg, #2e003e 0%, #9b4d96 100%); /* Gradient background */
+  padding: 2vw; /* Equal padding on all sides (adjust as needed) */
+  box-sizing: border-box; /* Ensure padding is included in total size */
+  overflow: hidden; /* Ensures image doesn't overflow */
+  display: flex; /* Center the content inside */
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ensures the image fits within the container */
-  border-radius: 1.5rem; /* Apply rounded corners to the profile container */
+  border-radius: 1.5rem; /* Circular corners (rounded) */
 }
 
 /* Profile image */
 .profile .profile-img {
-  height: 80vw; /* Size the profile image based on viewport width */
-  max-height: 45rem; /* Maximum height for the image */
+  height: calc(80vw - 4vw); /* Subtract padding from the image size */
+  max-height: calc(45rem - 4vw); /* Subtract padding from the maximum height */
   position: absolute; /* Position the image absolutely */
   bottom: 0;
   left: 50%;
   transform: translateX(-50%); /* Center the image horizontally */
-  object-fit: cover; /* Ensure the image covers the container area while maintaining aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+  /* Removed the border-radius to match rectangular shape */
+}
+
+/* Dots decoration (keeping original position) */
+.profile .dots-1 {
+  position: absolute;
+  width: 3vw; /* Width of the dots */
+  right: 1.5vw; /* Position from the right */
+  top: 4vw; /* Position from the top */
 }
 
 
