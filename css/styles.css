@@ -11608,7 +11608,7 @@ html {
   height: 100%; /* Set the image to fill the container */
   width: 100%; /* Ensure the image stretches to fill the container */
   object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
-  border-radius: 10%; /* Keep the image rounded, matching the container's shape */
+  border-radius: 5vw; /* Keep the image rounded, matching the container's shape */
 }
 
 
