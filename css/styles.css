@@ -8309,6 +8309,12 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-purple {
+  --bs-bg-opacity: 1; /* Set opacity to 1 (fully opaque) */
+  --bs-light-rgb: 46, 0, 62; /* RGB values for dark purple (#2e003e) */
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -11565,6 +11571,10 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.text-light-purple {
+  color: #b19cd9; /* Light purple color */
+}
+
 .rounded-4 {
   border-radius: 1rem !important;
 }
@@ -11580,13 +11590,13 @@ html {
 /* Profile container */
 .profile {
   position: relative;
-  width: 80vw; /* Match the width of the profile image container */
-  max-width: 45rem; /* Match the maximum width constraint */
-  height: 80vw; /* Same as the width to make it square */
-  max-height: 45rem; /* Maximum height */
+  width: 80vw; /* Adjust the width to your preference */
+  max-width: 45rem; /* Maximum width constraint */
+  height: 50vw; /* Adjust the height to make it rectangular */
+  max-height: 30rem; /* Maximum height constraint */
   background: linear-gradient(135deg, #2e003e 0%, #9b4d96 100%); /* Gradient background */
-  border-radius: 50%; /* Circular background */
-  overflow: hidden; /* Ensure the image fits within the circular container */
+  /* Removed the border-radius to make it rectangular */
+  overflow: hidden; /* Ensures image doesn't overflow */
   display: flex; /* Center the content inside */
   justify-content: center;
   align-items: center;
@@ -11601,7 +11611,7 @@ html {
   left: 50%;
   transform: translateX(-50%); /* Center the image horizontally */
   object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
-  border-radius: 50%; /* Ensure the image is circular */
+  /* Removed the border-radius to match rectangular shape */
 }
 
 /* Dots decoration (keeping original position) */
