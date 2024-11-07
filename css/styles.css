@@ -11595,7 +11595,8 @@ html {
   height: 50vw; /* Adjust the height to make it rectangular */
   max-height: 30rem; /* Maximum height constraint */
   background: linear-gradient(135deg, #2e003e 0%, #9b4d96 100%); /* Gradient background */
-  /* Removed the border-radius to make it rectangular */
+  padding: 2vw; /* Equal padding on all sides (adjust as needed) */
+  box-sizing: border-box; /* Ensure padding is included in total size */
   overflow: hidden; /* Ensures image doesn't overflow */
   display: flex; /* Center the content inside */
   justify-content: center;
@@ -11604,8 +11605,8 @@ html {
 
 /* Profile image */
 .profile .profile-img {
-  height: 80vw; /* Size the profile image based on viewport width */
-  max-height: 45rem; /* Maximum height for the image */
+  height: calc(80vw - 4vw); /* Subtract padding from the image size */
+  max-height: calc(45rem - 4vw); /* Subtract padding from the maximum height */
   position: absolute; /* Position the image absolutely */
   bottom: 0;
   left: 50%;
@@ -11621,6 +11622,7 @@ html {
   right: 1.5vw; /* Position from the right */
   top: 4vw; /* Position from the top */
 }
+
 
 /* .profile {
   position: relative;
