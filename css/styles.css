@@ -11587,34 +11587,8 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
+
 .profile {
-  position: relative;
-  width: 80vw; /* Adjust the container size based on viewport width */
-  height: 100vw; /* Set height to match width to maintain a square shape */
-  max-width: 45rem;  /* Set max-width for larger screens */
-  max-height: 45rem; /* Set max-height for larger screens */
-  border-radius: 10vw; /* Rounded corners */
-  margin-top: 5vw; /* Adjust top margin for spacing */
-  border: 5px solid #5a1d8d; /* Dark purple border */
-  overflow: hidden;  /* Hide image overflow */
-  display: flex;  /* Flexbox to center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-/* Profile image */
-.profile .profile-img {
-  width: 80%;  /* Make the image fill the container's width */
-  height: 80%; /* Make the image fill the container's height */
-  object-fit: cover; /* Ensure image covers the area while preserving aspect ratio */
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(50%); /* Center image and adjust position */
-  border-radius: 10vw; /* Match the border-radius of the container */
-}
-
-/* .profile {
   position: relative;
   height: 75vw;
   width: 75vw;
@@ -11630,7 +11604,7 @@ html {
   bottom: 50%;
   left: 50%;
   transform: translateX(-50%);
-} */
+}
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
