@@ -11588,7 +11588,6 @@ html {
   font-size: 1.5rem;
 }
 
-/* Profile container */
 .profile {
   position: relative;
   height: 75vw;
@@ -11598,8 +11597,6 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
-
-/* Profile image */
 .profile .profile-img {
   height: 80vw;
   max-height: 45rem;
@@ -11608,25 +11605,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
-
-
-/* .profile {
-  position: relative;
-  height: 75vw;
-  width: 75vw;
-  border-radius: 5vw;
-  margin-top: 5vw;
-  max-height: 40rem;
-  max-width: 40rem;
-}
-.profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}*/
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
