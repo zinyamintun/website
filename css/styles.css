@@ -11588,24 +11588,29 @@ html {
   font-size: 1.5rem;
 }
 
+/* Profile container */
 .profile {
   position: relative;
-  height: 75vw;
-  width: 75vw;
-  border-radius: 5vw;
-  margin-top: 5vw;
-  max-height: 40rem;
-  max-width: 40rem;
+  height: 75vw; /* Adjust based on your design */
+  width: 75vw; /* Adjust based on your design */
+  border-radius: 5vw; /* Rounded corners */
+  margin-top: 5vw; /* Adjust the spacing from the top */
+  max-height: 40rem; /* Maximum height */
+  max-width: 40rem; /* Maximum width */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
+
+/* Profile image */
 .profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
+  height: 80vw; /* Image height based on viewport width */
+  max-height: 45rem; /* Maximum image height */
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transform: translateY(50%);
+  width: 100%; /* Make the image fill the width */
+  object-fit: cover; /* Ensure the image covers the container area without distortion */
 }
+
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
