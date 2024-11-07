@@ -11587,41 +11587,61 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-/* Profile container */
-.profile {
+/* Outer container (profile background) */
+.profile-container {
   position: relative;
-  width: 80vw; /* Adjust the width to your preference */
-  max-width: 45rem; /* Maximum width constraint */
-  height: 50vw; /* Adjust the height to make it rectangular */
-  max-height: 30rem; /* Maximum height constraint */
+  width: 80vw; /* Adjust width of the profile container */
+  max-width: 45rem; /* Maximum width */
+  height: 50vw; /* Adjust the height for a rectangular shape */
+  max-height: 30rem; /* Maximum height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image does not overflow outside of rounded content */
+}
+
+/* Background with gradient (does not have rounded corners) */
+.profile-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(135deg, #2e003e 0%, #9b4d96 100%); /* Gradient background */
-  padding: 2vw; /* Equal padding on all sides (adjust as needed) */
-  box-sizing: border-box; /* Ensure padding is included in total size */
-  overflow: hidden; /* Ensures image doesn't overflow */
-  display: flex; /* Center the content inside */
+  /* No border-radius here to maintain rectangular background */
+}
+
+/* Inner content with rounded corners */
+.profile-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2vw; /* Equal padding (adjust as needed) */
+  box-sizing: border-box;
+  border-radius: 1.5rem; /* Rounded corners applied to the content */
+  overflow: hidden; /* Ensure content fits within rounded container */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Profile image */
 .profile .profile-img {
-  height: calc(80vw - 4vw); /* Subtract padding from the image size */
-  max-height: calc(45rem - 4vw); /* Subtract padding from the maximum height */
-  position: absolute; /* Position the image absolutely */
+  height: calc(80vw - 4vw); /* Adjust the image size based on the padding */
+  max-height: calc(45rem - 4vw); /* Maximum height considering padding */
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%); /* Center the image horizontally */
-  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
-  /* Removed the border-radius to match rectangular shape */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
 }
 
-/* Dots decoration (keeping original position) */
+/* Dots decoration (optional) */
 .profile .dots-1 {
   position: absolute;
   width: 3vw; /* Width of the dots */
   right: 1.5vw; /* Position from the right */
   top: 4vw; /* Position from the top */
 }
+
 
 
 /* .profile {
