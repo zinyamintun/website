@@ -11597,29 +11597,19 @@ html {
   max-width: 40rem; /* Maximum width for the container */
   border-radius: 50%; /* Make it a perfect circle */
   margin-top: 5vw; /* Optional: Margin from the top */
-  overflow: hidden; /* Ensure image is contained within the circle */
+  overflow: hidden; /* Ensures image fits within the circular container */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10%; /* Padding to create space around the image */
 }
 
 /* Profile image */
 .profile .profile-img {
   height: 100%; /* Set the image to fill the container */
   width: 100%; /* Ensure the image stretches to fill the container */
-  position: absolute; /* Keep it in position */
-  bottom: 0; /* Align to the bottom of the container */
-  left: 50%; /* Center it horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  object-fit: cover; /* Ensure the image covers the whole area, maintaining aspect ratio */
-}
-
-/* Optional: Decoration or dots */
-.profile .dots-1 {
-  position: absolute;
-  width: 3vw; /* Width of the dots */
-  right: 1.5vw; /* Position from the right */
-  top: 4vw; /* Position from the top */
+  object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
+  border-radius: 50%; /* Keep the image rounded, matching the container's shape */
 }
 
 
@@ -11639,13 +11629,13 @@ html {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+}*/
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
   right: 1.5vw;
   top: 4vw;
-} */
+} 
 .profile .dots-1 svg {
   fill: #fff;
 }
