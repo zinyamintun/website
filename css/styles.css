@@ -11587,41 +11587,10 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-/* Profile container */
+
+
+
 .profile {
-  position: relative;
-  height: 75vw; /* Adjust the height based on viewport width */
-  width: 75vw; /* Adjust the width based on viewport width */
-  max-height: 40rem; /* Maximum height for the container */
-  max-width: 40rem; /* Maximum width for the container */
-  border-radius: 50%; /* Make it a perfect circle */
-  margin-top: 5vw; /* Optional: Margin from the top */
-  overflow: hidden; /* Ensure image is contained within the circle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Profile image */
-.profile .profile-img {
-  height: 100%; /* Set the image to fill the container */
-  width: 100%; /* Ensure the image stretches to fill the container */
-  position: absolute; /* Keep it in position */
-  bottom: 0; /* Align to the bottom of the container */
-  left: 50%; /* Center it horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
-  object-fit: cover; /* Ensure the image covers the whole area, maintaining aspect ratio */
-}
-
-/* Optional: Decoration or dots */
-.profile .dots-1 {
-  position: absolute;
-  width: 3vw; /* Width of the dots */
-  right: 1.5vw; /* Position from the right */
-  top: 4vw; /* Position from the top */
-}
-
-/* .profile {
   position: relative;
   height: 75vw;
   width: 75vw;
@@ -11643,7 +11612,7 @@ html {
   width: 3vw;
   right: 1.5vw;
   top: 4vw;
-} */
+}
 .profile .dots-1 svg {
   fill: #fff;
 }
