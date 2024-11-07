@@ -11595,7 +11595,7 @@ html {
   width: 75vw; /* Adjust the width based on viewport width */
   max-height: 40rem; /* Maximum height for the container */
   max-width: 40rem; /* Maximum width for the container */
-  border-radius: 50%; /* Make it a perfect circle */
+  border-radius: 10%; /* Make it a perfect circle */
   margin-top: 5vw; /* Optional: Margin from the top */
   overflow: hidden; /* Ensures image fits within the circular container */
   display: flex;
