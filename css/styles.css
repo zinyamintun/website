@@ -11605,10 +11605,12 @@ html {
 
 /* Profile image */
 .profile .profile-img {
-  height: 100%; /* Set the image to fill the container */
-  width: 100%; /* Ensure the image stretches to fill the container */
-  object-fit: cover; /* Crop the image to cover the entire container, maintaining aspect ratio */
-  border-radius: 5vw; /* Keep the image rounded, matching the container's shape */
+  height: 80vw;
+  max-height: 45rem;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
