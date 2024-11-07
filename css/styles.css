@@ -11587,32 +11587,31 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-/* Profile container */
 .profile {
   position: relative;
-  height: 80vw; /* Adjust the height to match the profile image size */
-  width: 80vw;  /* Adjust the width to match the profile image size */
-  border-radius: 10vw; /* Round corners for a circular appearance */
-  margin-top: 5vw; /* Adjust top margin */
-  max-height: 45rem;  /* Max height for larger screens */
-  max-width: 45rem;   /* Max width for larger screens */
+  width: 80vw; /* Adjust the container size based on viewport width */
+  height: 80vw; /* Set height to match width to maintain a square shape */
+  max-width: 45rem;  /* Set max-width for larger screens */
+  max-height: 45rem; /* Set max-height for larger screens */
+  border-radius: 10vw; /* Rounded corners */
+  margin-top: 5vw; /* Adjust top margin for spacing */
   border: 5px solid #5a1d8d; /* Dark purple border */
-  overflow: hidden;  /* Hide overflow if any part of the image overflows */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;  /* Hide image overflow */
+  display: flex;  /* Flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 /* Profile image */
 .profile .profile-img {
-  height: 80vw; /* Image size based on the container width */
-  max-height: 45rem;  /* Max height to prevent it from becoming too large */
+  width: 80%;  /* Make the image fill the container's width */
+  height: 80%; /* Make the image fill the container's height */
+  object-fit: cover; /* Ensure image covers the area while preserving aspect ratio */
   position: absolute;
-  bottom: 50%;  /* Center the image vertically */
+  bottom: 0;
   left: 50%;
-  transform: translateX(-50%);  /* Center horizontally */
-  object-fit: cover;  /* Ensure the image covers the entire area */
-  border-radius: 10vw; /* Match the border radius of the profile container */
+  transform: translateX(-50%) translateY(50%); /* Center image and adjust position */
+  border-radius: 10vw; /* Match the border-radius of the container */
 }
 
 /* .profile {
