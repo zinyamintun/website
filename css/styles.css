@@ -11601,7 +11601,7 @@ html {
   height: 80vw;
   max-height: 45rem;
   position: absolute;
-  bottom: 50%;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
