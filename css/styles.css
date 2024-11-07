@@ -11590,7 +11590,7 @@ html {
 .profile {
   position: relative;
   width: 80vw; /* Adjust the container size based on viewport width */
-  height: 80vw; /* Set height to match width to maintain a square shape */
+  height: 100vw; /* Set height to match width to maintain a square shape */
   max-width: 45rem;  /* Set max-width for larger screens */
   max-height: 45rem; /* Set max-height for larger screens */
   border-radius: 10vw; /* Rounded corners */
