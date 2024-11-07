@@ -11597,10 +11597,8 @@ html {
   max-width: 40rem; /* Maximum width for the container */
   border-radius: 5vw; /* Make it a perfect circle */
   margin-top: 5vw; /* Optional: Margin from the top */
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10%; /* Padding to create space around the image */
 }
 
 /* Profile image */
