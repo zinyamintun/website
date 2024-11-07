@@ -8311,7 +8311,7 @@ textarea.form-control-lg {
 
 .bg-purple {
   --bs-bg-opacity: 1; /* Set opacity to 1 (fully opaque) */
-  --bs-light-rgb: 53, 15, 86; /* RGB values for dark purple (#2e003e) */
+  --bs-light-rgb: 33, 10, 54; /* RGB values for dark purple (#2e003e) */
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
@@ -11595,9 +11595,8 @@ html {
   width: 75vw; /* Adjust the width based on viewport width */
   max-height: 40rem; /* Maximum height for the container */
   max-width: 40rem; /* Maximum width for the container */
-  border-radius: 10%; /* Make it a perfect circle */
+  border-radius: 5vw; /* Make it a perfect circle */
   margin-top: 5vw; /* Optional: Margin from the top */
-  overflow: hidden; /* Ensures image fits within the circular container */
   display: flex;
   justify-content: center;
   align-items: center;
