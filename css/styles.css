@@ -11591,14 +11591,12 @@ html {
 /* Profile container */
 .profile {
   position: relative;
-  height: 75vw; /* Adjust the height based on viewport width */
-  width: 75vw; /* Adjust the width based on viewport width */
-  max-height: 40rem; /* Maximum height for the container */
-  max-width: 40rem; /* Maximum width for the container */
-  border-radius: 5vw; /* Make it a perfect circle */
-  margin-top: 5vw; /* Optional: Margin from the top */
-  justify-content: center;
-  align-items: center;
+  height: 75vw;
+  width: 75vw;
+  border-radius: 5vw;
+  margin-top: 5vw;
+  max-height: 40rem;
+  max-width: 40rem;
 }
 
 /* Profile image */
