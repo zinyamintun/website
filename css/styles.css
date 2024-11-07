@@ -11587,44 +11587,39 @@ html {
   width: 3rem;
   font-size: 1.5rem;
 }
-
 /* Profile container */
 .profile {
   position: relative;
-  width: 80vw; /* Adjust the width to your preference */
-  max-width: 45rem; /* Maximum width constraint */
-  height: 50vw; /* Adjust the height to make it rectangular */
-  max-height: 30rem; /* Maximum height constraint */
-  background: linear-gradient(135deg, #2e003e 0%, #9b4d96 100%); /* Gradient background */
-  padding: 2vw; /* Equal padding on all sides (adjust as needed) */
-  box-sizing: border-box; /* Ensure padding is included in total size */
-  overflow: hidden; /* Ensures image doesn't overflow */
-  display: flex; /* Center the content inside */
+  height: 75vw; /* Adjust the height based on viewport width */
+  width: 75vw; /* Adjust the width based on viewport width */
+  max-height: 40rem; /* Maximum height for the container */
+  max-width: 40rem; /* Maximum width for the container */
+  border-radius: 50%; /* Make it a perfect circle */
+  margin-top: 5vw; /* Optional: Margin from the top */
+  overflow: hidden; /* Ensure image is contained within the circle */
+  display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1.5rem; /* Circular corners (rounded) */
 }
 
 /* Profile image */
 .profile .profile-img {
-  height: calc(80vw - 4vw); /* Subtract padding from the image size */
-  max-height: calc(45rem - 4vw); /* Subtract padding from the maximum height */
-  position: absolute; /* Position the image absolutely */
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); /* Center the image horizontally */
-  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
-  /* Removed the border-radius to match rectangular shape */
+  height: 100%; /* Set the image to fill the container */
+  width: 100%; /* Ensure the image stretches to fill the container */
+  position: absolute; /* Keep it in position */
+  bottom: 0; /* Align to the bottom of the container */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  object-fit: cover; /* Ensure the image covers the whole area, maintaining aspect ratio */
 }
 
-/* Dots decoration (keeping original position) */
+/* Optional: Decoration or dots */
 .profile .dots-1 {
   position: absolute;
   width: 3vw; /* Width of the dots */
   right: 1.5vw; /* Position from the right */
   top: 4vw; /* Position from the top */
 }
-
 
 /* .profile {
   position: relative;
