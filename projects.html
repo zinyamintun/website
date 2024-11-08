@@ -107,6 +107,33 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Robot Perception</h2>
+                                            <p>
+                                                I leveraged PyTorch and TensorFlow to build and train basic convolutional neural networks (CNNs) for tasks such as image segmentation and pose estimation. 
+                                                Additionally, I implemented Truncated Signed Distance Fields (TSDF) for 3D reconstruction, integrating it with the Iterative Closest Point (ICP) algorithm to estimate object poses. 
+                                                This integration enabled accurate pose estimation in a simulated environment, which was then used for grasp planning in robotic tasks.
+                                            </p>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://github.com/zinyamintun/EE227" target="_blank">Coming Soon</a>
+                                        </div>
+                                        <div id="model-viewer" style="width: 100%; height: 400px; border: 1px solid #ccc; margin-top: 20px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Include the PLY.js library -->
+                            <script src="https://rawgit.com/mauricius/plyjs/master/ply.min.js"></script>
+                            <script>
+                                window.onload = function() {
+                                    var viewer = new PLYViewer();
+                                    // Make sure the file path is correct and accessible
+                                    viewer.load('https://raw.githubusercontent.com/your-username/your-repository/main/assets/mesh_output.ply');
+                                    viewer.render();
+                                }
+                            </script>                            
                             <!-- Project Card 4-->
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-0">
