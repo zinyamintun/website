@@ -1,219 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Projects</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Home</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <!-- The system was publicly demonstrated and evaluated in a user study with 29 participants, who rated the realism of the experience
+                                 at 4.4/5.0, confirming the effectiveness of the haptic feedback and immersive gameplay. Additionally, I extended the game for a 
+                                  separate course by developing a WebGL-compatible version with VR headset support (HMD), enabling users to experience the game in 
+                                  virtual reality without haptic interaction. -->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">VirtuSlide: Haptic Shuffleboard </h2>
+                                            <p>I developed a haptic-enabled virtual shuffleboard game in Unity, integrating real-time physics and force feedback 
+                                                with a custom 2-DOF pantograph interface via serial communication of user input (position, velocity, button state). 
+                                                To deliver realistic tactile sensations, I implemented physics-based rendering of mass inertia, Coulomb and viscous 
+                                                friction, and boundary collisions using a virtual coupling and spring-damper model.</p>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://charm.stanford.edu/ME327/2025-Group4">Project Website</a>
+                                        </div>
+                                        <div class="embed-responsive embed-responsive-3by4">
+                                            <iframe width="300" height="530"
+                                                loading="lazy"
+                                                src="https://www.youtube.com/embed/RBwGvot6kZM?autoplay=1&mute=1&loop=1&playlist=RBwGvot6kZM"
+                                                frameborder="0"
+                                                allow="autoplay; encrypted-media"
+                                                allowfullscreen>
+                                            </iframe>
 
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Touch Sensing Display</h2>
+                                            <p>I developed a C++ algorithm for a mutual-capacitance touch sensing system using a Raspberry Pi and AD/DA hat. The system 
+                                                uses pseudorandom binary sequence (PRBS) signal generation, real-time signal correlation for capacitance mapping, and 
+                                                centroid detection to estimate touch location with high accuracy.
+                                            </p>
+                                        </div>
+                                        <div class="embed-responsive embed-responsive-3by4">
+                                            <iframe width="300" height="280"
+                                                src="https://www.youtube.com/embed/m_EbAq4FfkA?controls=1&autoplay=1&loop=1&playlist=m_EbAq4FfkA&mute=1"
+                                                frameborder="0"
+                                                allow="autoplay; encrypted-media"
+                                                allowfullscreen>
+                                            </iframe>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-
-  <!-- CSS -->
-  <link href="css/styles.css" rel="stylesheet" />
-
-  <!-- Lite YouTube -->
-  <style>
-    .yt-lite {
-      position: relative;
-      cursor: pointer;
-      background: #000;
-      border-radius: .75rem;
-      overflow: hidden;
-    }
-    .yt-lite img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .yt-lite::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at center, rgba(0,0,0,.35), rgba(0,0,0,.65));
-    }
-    .yt-lite span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-style: solid;
-      border-width: 12px 0 12px 20px;
-      border-color: transparent transparent transparent white;
-      transform: translate(-40%, -50%);
-      z-index: 2;
-    }
-  </style>
-</head>
-
-<body class="d-flex flex-column h-100 bg-light">
-<main class="flex-shrink-0">
-
-<!-- NAV -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-  <div class="container px-5">
-    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Home</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ms-auto small fw-bolder">
-        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<section class="py-5">
-<div class="container px-5">
-<div class="text-center mb-5">
-  <h1 class="display-5 fw-bolder"><span class="text-gradient">Projects</span></h1>
-</div>
-
-<!-- CARD FUNCTION -->
-<!-- Copy pattern -->
-
-<!-- VirtuSlide -->
-<div class="card shadow rounded-4 border-0 mb-5">
-<div class="card-body p-0">
-<div class="d-flex align-items-center">
-<div class="p-5 flex-grow-1">
-<h2 class="fw-bolder">VirtuSlide: Haptic Shuffleboard</h2>
-<p>I developed a haptic-enabled virtual shuffleboard game in Unity, integrating real-time physics and force feedback
-with a custom 2-DOF pantograph interface.</p>
-<a class="btn btn-outline-dark btn-lg fw-bolder" href="https://charm.stanford.edu/ME327/2025-Group4">Project Website</a>
-</div>
-<div class="p-4" style="width:320px">
-<div class="ratio ratio-4x3 yt-lite" data-id="RBwGvot6kZM">
-<img src="https://img.youtube.com/vi/RBwGvot6kZM/hqdefault.jpg" loading="lazy">
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Touch Sensing -->
-<div class="card shadow rounded-4 border-0 mb-5">
-<div class="card-body p-0">
-<div class="d-flex align-items-center">
-<div class="p-5 flex-grow-1">
-<h2 class="fw-bolder">Touch Sensing Display</h2>
-<p>Developed a C++ mutual-capacitance touch sensing system using PRBS signal correlation and centroid detection.</p>
-</div>
-<div class="p-4" style="width:320px">
-<div class="ratio ratio-4x3 yt-lite" data-id="m_EbAq4FfkA">
-<img src="https://img.youtube.com/vi/m_EbAq4FfkA/hqdefault.jpg" loading="lazy">
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Fast Robot -->
-<div class="card shadow rounded-4 border-0 mb-5">
-<div class="card-body p-0">
-<div class="d-flex align-items-center">
-<div class="p-5 flex-grow-1">
-<h2 class="fw-bolder">Fast Robot</h2>
-<p>Built a mobile robot with Bluetooth telemetry, PID control, Kalman filtering, mapping, and autonomous navigation.</p>
-<a class="btn btn-outline-dark btn-lg fw-bolder" href="https://zinyamintun.github.io/zyt2-lab.github.io-FastRobots-2023-/">Project Website</a>
-</div>
-<div class="p-4" style="width:320px">
-<div class="ratio ratio-4x3 yt-lite" data-id="JajWKeTw9j8">
-<img src="https://img.youtube.com/vi/JajWKeTw9j8/hqdefault.jpg" loading="lazy">
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Grape Picking -->
-<div class="card shadow rounded-4 border-0 mb-5">
-<div class="card-body p-0">
-<div class="d-flex align-items-center">
-<div class="p-5 flex-grow-1">
-<h2 class="fw-bolder">Grape Picking Robot</h2>
-<p>Implemented RRT planning and PID control on a WidowX 250S using ROS.</p>
-<a class="btn btn-outline-dark btn-lg fw-bolder" href="https://github.com/rbatra2000/cs6751">Project Github</a>
-</div>
-<div class="p-4" style="width:320px">
-<div class="ratio ratio-4x3 yt-lite" data-id="AZyVRLJgdOQ">
-<img src="https://img.youtube.com/vi/AZyVRLJgdOQ/hqdefault.jpg" loading="lazy">
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Cube Craze -->
-<div class="card shadow rounded-4 border-0 mb-5">
-<div class="card-body p-0">
-<div class="d-flex align-items-center">
-<div class="p-5 flex-grow-1">
-<h2 class="fw-bolder">Cube Craze Robot</h2>
-<p>Built a competitive cube-collecting robot.</p>
-<a class="btn btn-outline-dark btn-lg fw-bolder" href="https://drive.google.com/file/d/1uK4eu7V6HNq_JN62k-tbfWdUOUlqnBp9/view">Read More</a>
-</div>
-<div class="p-4" style="width:320px">
-<div class="ratio ratio-4x3 yt-lite" data-id="vDX43qM1hmI">
-<img src="https://img.youtube.com/vi/vDX43qM1hmI/hqdefault.jpg" loading="lazy">
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Robot Perception -->
-<div class="card shadow rounded-4 border-0 mb-5">
-<div class="card-body p-0">
-<div class="d-flex align-items-center">
-<div class="p-5 flex-grow-1">
-<h2 class="fw-bolder">Robot Perception</h2>
-<p>Built CNN pipelines and TSDF + ICP pose estimation for robotic grasp planning.</p>
-<a class="btn btn-outline-dark btn-lg fw-bolder" href="https://github.com/zinyamintun/EE227">Coming Soon</a>
-</div>
-<div class="p-4" style="width:320px">
-<div class="ratio ratio-4x3 yt-lite" data-id="nIPROdM54O8">
-<img src="https://img.youtube.com/vi/nIPROdM54O8/hqdefault.jpg" loading="lazy">
-<span></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</section>
-</main>
-
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-document.querySelectorAll(".yt-lite").forEach(el => {
-  el.addEventListener("click", () => {
-    const id = el.dataset.id;
-    el.innerHTML = `
-      <iframe
-        src="https://www.youtube.com/embed/${id}?autoplay=1&mute=1"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-        frameborder="0"
-        loading="lazy"></iframe>
-    `;
-  });
-});
-</script>
-
-</body>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Fast Robot</h2>
+                                            <p>I assembled a mobile robot by soldering an Artemis board, Time of Flight sensors, IMU, 
+                                                and motor drivers to build a robot from scratch. I developed algorithms in Python and 
+                                                C++ for Bluetooth communication of sensor readings, enabling PID control, Kalman filtering,
+                                                 mapping, localization, and path planning to perform stunts and autonomous navigation.
+                                            </p>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://zinyamintun.github.io/zyt2-lab.github.io-FastRobots-2023-/">Project Website</a>
+                                        </div>
+                                        <div class="embed-responsive embed-responsive-3by4">
+                                            <iframe width="300" height="280" 
+                                                src="https://www.youtube.com/embed/JajWKeTw9j8?controls=1&autoplay=1&loop=1&playlist=JajWKeTw9j8&mute=1" 
+                                                allow="autoplay" 
+                                                frameborder="0">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Project Card 4-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Grape Picking Robot</h2>
+                                            <p> With a group of four, we performed grape picking tasks using ROS (Robot Operating System) on the WidowX 250S robot. 
+                                                I contributed to the implementation of RRT (Rapidly-exploring Random Tree) planning and PID (Proportional-Integral-Derivative) control 
+                                                algorithms to successfully pick grapes in a real-time simulated environment.
+                                            </p>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://github.com/rbatra2000/cs6751">Project Github</a><br><br>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://drive.google.com/file/d/11UkvsXsQirpkS9rCVoQSXY76R7eR41c3/view">Read More</a>
+                                        </div>
+                                        <div class="embed-responsive embed-responsive-3by4">
+                                            <iframe width="400" height="225" 
+                                                src="https://www.youtube.com/embed/AZyVRLJgdOQ?controls=1&autoplay=1&loop=1&playlist=AZyVRLJgdOQ&mute=1" 
+                                                allow="autoplay" 
+                                                frameborder="0">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 5-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Cube Craze Robot</h2>
+                                            <p>We built a robot to compete in cube collecting.</p>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://drive.google.com/file/d/1uK4eu7V6HNq_JN62k-tbfWdUOUlqnBp9/view?usp=sharing">Read More</a> 
+                                        </div>
+                                        <div class="embed-responsive embed-responsive-3by4">
+                                            <iframe width="295" height="250" 
+                                                src="https://www.youtube.com/embed/vDX43qM1hmI?controls=1&autoplay=1&loop=1&playlist=vDX43qM1hmI&mute=1" 
+                                                allow="autoplay" 
+                                                frameborder="0">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Robot Perception</h2>
+                                            <p>
+                                                I leveraged PyTorch and TensorFlow to build and train basic convolutional neural networks (CNNs) for tasks such as image segmentation and pose estimation. 
+                                                Additionally, I implemented Truncated Signed Distance Fields (TSDF) for 3D reconstruction, integrating it with the Iterative Closest Point (ICP) algorithm to estimate object poses. 
+                                                This integration enabled accurate pose estimation in a simulated environment, which was then used for grasp planning in robotic tasks.
+                                            </p>
+                                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://github.com/zinyamintun/EE227" target="_blank">Coming Soon</a>
+                                        </div>
+                                         <div class="embed-responsive embed-responsive-3by4">
+                                            <iframe
+                                                width="300"
+                                                height="280"
+                                                src="https://www.youtube.com/embed/nIPROdM54O8?autoplay=1&loop=1&playlist=nIPROdM54O8&mute=1&controls=1"
+                                                frameborder="0"
+                                                allow="autoplay; encrypted-media"
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                      
+                            <!-- Project Card 6-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Page Turner</h2>
+                                            <p>I collaborated with a fellow student to design a foot-pedal-operated page turner, allowing pianists
+                                                 to turn pages hands-free during performances. To gather design insights, we conducted 
+                                                 interviews with three pianists, which informed the development process. The design was then 
+                                                 modeled in Fusion 360, and the prototype was fabricated using a combination of laser cutting, 
+                                                 3D printing, and commercial off-the-shelf parts. Our project was recognized as the "Best Project" within our lab session based on peer voting.</p>
+                                             <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://cornell.digication.com/zinyamintun-portfolio/open-design-project">Read More</a> 
+                                        </div>
+                                        <img class="img-fluid" src="assets/pageturner.png" alt="Page Turner Prototype" style="width: 300px; height: 350px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 7-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Water Pump</h2>
+                                            <p>We designed and built water pump. Our water pump was able to successfully load 4.7 Liters of water to a 1.5-meter height within 1 minute. </p>
+                                             <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://cornell.digication.com/zinyamintun-portfolio/water-pump">Read More</a> 
+                                        </div>
+                                        <img class="img-fluid" src="assets/waterpump.png" alt="Water Pump" style="width: 400px; height: 300px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 8-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Reuleaux Machine</h2>
+                                            <p>I redesigned the Reuleaux Machine: S34 in Fusion 360. </p>
+                                             <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://cornell.digication.com/zinyamintun-portfolio/cad">Read More</a> 
+                                        </div>
+                                        <img class="img-fluid" src="assets/rmachine.png" alt="Reuleaux Machine" style="width: 300px; height: 350px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
